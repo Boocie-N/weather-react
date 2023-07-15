@@ -88,7 +88,7 @@ export default function Weather(props) {
               Made with ❣️ by Boocie <br />
               Designed in Figma,
               <a
-                href="https://github.com/Boocie-N/"
+                href="https://github.com/Boocie-N/weather-react"
                 target="_blank"
                 rel="noreferrer"
               >
