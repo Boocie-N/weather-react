@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import WeatherContent from "./WeatherContent";
-import WeatherForecast from "./WeatherForecast"; 
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import "./Weather.css"
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -61,33 +61,49 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherContent data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} city={weatherData.city}/>
+        <br />
+        <br />
+        <h3>This week's weather</h3>
+        <WeatherForecast
+          coordinates={weatherData.coordinates}
+          city={weatherData.city}
+        />
 
-        <footer>
-          This project was coded by{" "}
-          <a
-            href="https://www.shecodes.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            SheCodes
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/shecodesio/weather"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            open-sourced on GitHub
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://shecodes-weather.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hosted on Netlify
-          </a>
+        <footer class="mt-5">
+          <div class="footer-header">
+            <h3>Get in Touch.</h3>
+          </div>
+          <div class="icon">
+            <a
+              href="mailto:1234@yahoo.com"
+              target="_blank"
+              rel="noreferrer"
+              class="email-icon"
+            >
+              Email me
+            </a>
+          </div>
+          <div>
+            <p>
+              Made with ❣️ by Boocie <br />
+              Designed in Figma,
+              <a
+                href="https://github.com/Boocie-N/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                open-source
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://shecodes-weather.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                hosted on Netlify
+              </a>
+            </p>
+          </div>
         </footer>
       </div>
     );

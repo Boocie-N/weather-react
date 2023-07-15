@@ -1,11 +1,10 @@
 .WeatherApp form {
   margin-top: 40px;
-  border-bottom: 1px solid #f9f7fe;
   padding-bottom: 30px;
 }
 
 .WeatherApp .search-input {
-  background: #f9f7fe;
+  background: #f8f2e7;
   border: none;
   padding: 15px 20px;
   display: inline-block;
@@ -17,7 +16,7 @@
 }
 
 .WeatherApp .btn {
-  background: #885df1;
+  background: #f49f0a;
   font-weight: bold;
   font-size: 16px;
   padding: 15px 0;
@@ -55,7 +54,7 @@
 }
 
 .WeatherApp li strong {
-  color: #f65282;
+  color: #00a6a6;
   font-weight: normal;
 }
 
@@ -63,7 +62,7 @@
   font-weight: bold;
   color: rgb(33, 33, 33);
   margin-left: 5px;
-  font-weight: 400;
+  font-weight: 200;
   margin-left: 10px;
   font-weight: bold;
   font-size: 80px;
@@ -85,7 +84,7 @@
 }
 
 .WeatherApp footer a {
-  color: #885df1;
+  color: #0077b6;
 }
 
 .WeatherApp footer {
@@ -93,5 +92,10 @@
   margin-top: 40px;
   line-height: 18px;
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(23, 18, 44, 0.926);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
 }
