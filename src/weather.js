@@ -96,7 +96,7 @@ export default function Weather(props) {
               </a>{" "}
               and{" "}
               <a
-                href="https://shecodes-weather.netlify.app/"
+                href="https://statuesque-dolphin-0ef486.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
